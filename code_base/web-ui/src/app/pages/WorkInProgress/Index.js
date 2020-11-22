@@ -22,27 +22,27 @@ export const WorkInProgress = () => {
           <Footer />
         </>
       ) : (
-        <Grid container display="flex" wrap="nowrap">
-          <img
-            src={toAbsoluteUrl("/media/wip/vertical-logo.png")}
-            style={{
-              position: "absolute",
-              marginLeft: "auto",
-              marginRight: "auto",
-              left: 0,
-              right: 0,
-              textAlign: "center",
-              width: mediumBreakPoint ? "13rem" : "19rem"
-            }}
-            alt=""
-          />
-          <Middle mobileBreakPoint={mobileBreakPoint}/>
-          <Grid container display="flex" direction="column">
-            <AboutUs />
-            <Footer />
+          <Grid container display="flex" wrap="nowrap">
+            <img
+              src={toAbsoluteUrl("/media/wip/vertical-logo.png")}
+              style={{
+                position: "absolute",
+                marginLeft: "auto",
+                marginRight: "auto",
+                left: 0,
+                right: 0,
+                textAlign: "center",
+                width: mediumBreakPoint ? "13rem" : "19rem"
+              }}
+              alt=""
+            />
+            <Middle mobileBreakPoint={mobileBreakPoint} />
+            <Grid container display="flex" direction="column">
+              <AboutUs />
+              <Footer />
+            </Grid>
           </Grid>
-        </Grid>
-      )}
+        )}
     </>
   );
 };

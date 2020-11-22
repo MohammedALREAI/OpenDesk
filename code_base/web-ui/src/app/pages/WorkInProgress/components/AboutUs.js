@@ -26,7 +26,7 @@ export default function AboutUs() {
   return (
     <Grid className={classes.root} container display="flex" justify="center" alignItems="center">
       <Container>
-        <Typography variant="h5" component="h5" className={classes.title}>
+        <Typography variant="h5" component="h5" className={classes.title} >
           About Us
         </Typography>
         <Typography className={classes.description}>
